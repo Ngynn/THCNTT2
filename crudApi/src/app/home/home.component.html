@@ -1,0 +1,17 @@
+<div class="container">
+    <!-- <div>
+        <button style="background-color: aqua;" (click)="openDialogAdd()">ADD NEW OB</button>
+    </div> -->
+    <div class="coffeeList" >
+        <mat-card class="example-card" *ngFor="let coffee of coffeeList$ | async">
+            <img mat-card-image src="{{coffee.image}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>Tên: {{coffee.name}}</mat-card-content>
+            <div>
+                <mat-card-content>Giá: {{coffee.price}}Đ</mat-card-content>
+                <mat-card-content>Số lượng: {{coffee.quantity}}</mat-card-content>
+            </div>
+            <button mat-button (click)="deleteCoffee(coffee.id)">Delete</button>
+        </mat-card>
+    </div>
+</div>
+  
