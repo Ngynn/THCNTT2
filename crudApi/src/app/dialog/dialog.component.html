@@ -1,0 +1,42 @@
+<div>
+    <div class="title" mat-dialog-title>
+        <h1>
+            Add Form
+        </h1>
+    </div>
+    <form [formGroup]="listForm" (ngSubmit)="submitForm">
+        <div mat-dialog-content class="formGroup">
+            <div class="row" >
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="First Name" formControlName="firstName">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Last Name " formControlName="lastName">
+                </mat-form-field>     
+            </div>
+            <div class="row" >
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Email" formControlName="email">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Address" formControlName="address">
+                </mat-form-field>
+    
+                  
+            </div>
+            <div class="row">
+                <mat-radio-group aria-label="Select an option" formControlName="gender">
+                    <mat-label><b>Gender</b></mat-label>
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Female</mat-radio-button>
+                    <mat-radio-button value="other">Other</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+    </form>
+    
+    <div mat-dialog-actions class="button">
+        <button mat-raised-button type="button" [mat-dialog-close]="">Cancel</button>
+        <button mat-raised-button color="primary" (click)="submitForm()" type="submit" >{{data? 'Update': "Save"}}</button>
+    </div>
+</div>

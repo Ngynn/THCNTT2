@@ -1,0 +1,19 @@
+.title {
+    margin-bottom:30px ;
+    text-align: center;
+}
+
+.row {
+  display: flex;
+//   flex-direction: column;
+gap: 10px;
+  
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    button{
+        flex: 1;
+    }
+}

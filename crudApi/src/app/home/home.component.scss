@@ -1,12 +1,29 @@
-.coffeeList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+// .coffeeList {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+// }
+
+// .example-card {
+//     max-width: 400px;
+//     flex: 1 1 150px; 
+//     margin: 10px;
+// }
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+.container {
+    padding-top: 20x;
+    margin: 0 auto;
+    max-width: 1280px;
+    mat-form-field {
+        width: 100%;
+    }
 }
 
-.example-card {
-    max-width: 400px;
-    flex: 1 1 150px; 
-    margin: 10px;
-}
+
+
   

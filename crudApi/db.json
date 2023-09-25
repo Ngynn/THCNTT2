@@ -16,27 +16,14 @@
   "profile": {
     "name": "typicode"
   },
-  "coffee": [
+  "form": [
     {
-      "name": "1",
-      "image": "https://i.pinimg.com/564x/77/cc/96/77cc9636beee418d6bcac07648f63358.jpg",
-      "price": "1",
-      "quantity": "1",
+      "firstName": "Long",
+      "lastName": "Tấn",
+      "email": "ikon0709@gmail.com",
+      "address": "122",
+      "gender": "female",
       "id": 1
-    },
-    {
-      "name": "123",
-      "image": "https://i.pinimg.com/564x/77/cc/96/77cc9636beee418d6bcac07648f63358.jpg",
-      "price": "123",
-      "quantity": "123123",
-      "id": 5
-    },
-    {
-      "name": "123",
-      "image": "https://i.pinimg.com/564x/77/cc/96/77cc9636beee418d6bcac07648f63358.jpg",
-      "price": "123123123",
-      "quantity": "123123123",
-      "id": 6
     }
   ]
 }

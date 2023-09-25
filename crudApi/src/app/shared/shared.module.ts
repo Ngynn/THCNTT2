@@ -1,21 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from '../components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
-import {DialogAddComponent} from '../components/dialog-add/dialog-add.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from '../home/home.component';
+import { DialogComponent } from '../dialog/dialog.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { WarningComponent } from '../dialog/warning/warning.component';
+
 
 @NgModule({
-  declarations: [NavbarComponent, DialogAddComponent, HomeComponent],
+  declarations: [HomeComponent, DialogComponent, WarningComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -28,7 +34,12 @@ import { HomeComponent } from '../home/home.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatCardModule,
+    MatRadioModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSnackBarModule
   ],
-  exports: [NavbarComponent, DialogAddComponent, HomeComponent]
+  exports: [ HomeComponent, DialogComponent, WarningComponent]
 })
 export class SharedModule { }

@@ -1,0 +1,19 @@
+.container {
+    place-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    button{
+        flex: 1;
+    }
+}
+
+.title {
+    margin-bottom:30px ;
+    font-size: larger;
+    
+}
+  
+
